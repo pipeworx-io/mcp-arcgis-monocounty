@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-arcgis-monocounty",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Mono County GIS — Mono County & Mammoth Lakes, California open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-arcgis-monocounty": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-monocounty"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-arcgis-monocounty"
+    "url": "git+https://github.com/pipeworx-io/mcp-arcgis-monocounty.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-8fc03d9d7d65eaf5f1cc0ae92f99e2c4548ec41d62a0c8adac1cf346d6684efc",
+    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
   }
 }
